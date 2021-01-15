@@ -9,7 +9,6 @@ var deck = [
 function iniciaJogo()
 {
     let card = document.getElementById("card1")
-    card.
 }
 
 function RegistrarNick()

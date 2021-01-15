@@ -1,13 +1,14 @@
 html, body{
     margin: 0px;
+    padding: 0px;
     height: 100%;
     width: 100%;
-    
+    min-width: 400px;
     text-align: center;
 }
 
 header {
-    background-color: ;
+    background-color: lightsteelblue;
 }
 
 h1 {
@@ -25,10 +26,12 @@ main {
 section {
     display: flex;
     justify-content: space-between;
+    font-family: "Inconsolata", serif;
+    font-size: 18px;
 }
 
 #deck {
-    width: 75%;
+    width: 100%;
 }
 
 div.card {
@@ -36,17 +39,24 @@ div.card {
     width: 80%;
     margin-top: 30px;
     background-color: lightslategray;
-    box-shadow: darkblue 10px 10px 5px;
+    box-shadow: darkslateblue 10px 10px 5px;
     border-radius: 5%;
 }
 
 img {
     margin-top: 15px;
     width: 70%;
+    min-height: 200px;
+    min-width: 350px;
     padding: 0%;
     border-radius: 5%;
 }
 
 input {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 0px;
+    padding-top: 0px;
 }

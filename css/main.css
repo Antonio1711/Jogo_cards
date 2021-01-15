@@ -1,0 +1,36 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: inline;
+}
+
+#deck {
+    width: 100%;
+}
+
+div.card {
+    width: 80%;
+    margin-top: 30px;
+    background-color: gray;
+    border-radius: 5%;
+}
+
+img {
+    margin-top: 15px;
+    width: 70%;
+    padding: 0%;
+}
+
+input {
+    margin-bottom: 15px;
+}

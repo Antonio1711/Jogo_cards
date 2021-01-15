@@ -1,3 +1,17 @@
+var deck = [
+    {
+        id: 1,
+        imgSrc: "./img/card1.jpg",
+        alternativa1: "Card1 - Alt1",
+        alternativa2: "Card1 - Alt2", 
+    }
+]
+function iniciaJogo()
+{
+    let card = document.getElementById("card1")
+    card.
+}
+
 function RegistrarNick()
 {
     let nick = document.getElementById("nickname").value 

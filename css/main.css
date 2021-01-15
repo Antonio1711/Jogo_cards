@@ -1,27 +1,42 @@
 html, body{
     margin: 0px;
-    padding: 0px;
+    height: 100%;
+    width: 100%;
     
     text-align: center;
 }
 
+header {
+    background-color: ;
+}
+
+h1 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
 main {
+    width: 100%;
     display: flex;
     justify-content: center;
+    background-image:url(../img/background.png);
 }
 
 section {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
 }
 
 #deck {
-    width: 100%;
+    width: 75%;
 }
 
 div.card {
+    margin: 20px;
     width: 80%;
     margin-top: 30px;
-    background-color: gray;
+    background-color: lightslategray;
+    box-shadow: darkblue 10px 10px 5px;
     border-radius: 5%;
 }
 
@@ -29,6 +44,7 @@ img {
     margin-top: 15px;
     width: 70%;
     padding: 0%;
+    border-radius: 5%;
 }
 
 input {

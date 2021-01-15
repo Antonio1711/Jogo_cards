@@ -12,6 +12,7 @@
         <h1>Jogo de Perguntas e Respostas</h1><br>
         <input type="text" name="nick" id="nickname" placeholder="Digite seu nickname">
         <button onclick="RegistrarNick()">Registrar</button>
+        <span>Score: </span>
     </header>
     <main>
         <div id="deck">
@@ -20,85 +21,95 @@
                     <img src="./img/card1.jpg" alt="Imagem de Game of Thrones"><br>
                     <input type="radio" name="alternativa" id="pergunta1" value="false">Vikings
                     <input type="radio" name="alternativa" id="pergunta2" value="true">Game of Thrones
-                    <input type="radio" name="alternativa" id="pergunta3" value="false">The Crown
+                    <input type="radio" name="alternativa" id="pergunta3" value="false">The Crown <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card2">
                     <img src="./img/card2.jpg" alt="Imagem de Breaking Bad"><br>
-                    <input type="radio" name="alternativa" id="pergunta4" value="true">Breaking Bad
-                    <input type="radio" name="alternativa" id="pergunta5" value="false">Ozark
-                    <input type="radio" name="alternativa" id="pergunta6" value="false">House of Cards
+                    <input type="radio" name="alternativa2" id="pergunta4" value="true">Breaking Bad
+                    <input type="radio" name="alternativa2" id="pergunta5" value="false">Ozark
+                    <input type="radio" name="alternativa2" id="pergunta6" value="false">House of Cards <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card3">
                     <img src="./img/card3.jpg" alt="Imagem de Stranger Things"><br>
-                    <input type="radio" name="alternativa" id="pergunta7" value="false">Skins
-                    <input type="radio" name="alternativa" id="pergunta8" value="true">Stranger Things
-                    <input type="radio" name="alternativa" id="pergunta9" value="false">A Maldição da Casa Hill
+                    <input type="radio" name="alternativa3" id="pergunta7" value="false">Skins
+                    <input type="radio" name="alternativa3" id="pergunta8" value="true">Stranger Things
+                    <input type="radio" name="alternativa3" id="pergunta9" value="false">A Maldição da Casa Hill <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
             </section>
             <section id="sessao2">
                 <div class="card" id="card4">
                     <img src="./img/card4.jpg" alt="Imagem de The Good Place"><br>
-                    <input type="radio" name="alternativa" id="pergunta10" value="false">FRIENDS
-                    <input type="radio" name="alternativa" id="pergunta11" value="false">How I Met Your Brother
-                    <input type="radio" name="alternativa" id="pergunta12" value="true">The Good Place
+                    <input type="radio" name="alternativa4" id="pergunta10" value="false">FRIENDS
+                    <input type="radio" name="alternativa4" id="pergunta11" value="false">How I Met Your Brother
+                    <input type="radio" name="alternativa4" id="pergunta12" value="true">The Good Place <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card5">
                     <img src="./img/card5.jpg" alt="Imagem de Brooklyn Nine-Nine"><br>
-                    <input type="radio" name="alternativa" id="pergunta13" value="true">Brooklyn Nine-Nine
-                    <input type="radio" name="alternativa" id="pergunta14" value="false">Community
-                    <input type="radio" name="alternativa" id="pergunta15" value="false">Grey's Anatomy
+                    <input type="radio" name="alternativa5" id="pergunta13" value="true">Brooklyn Nine-Nine
+                    <input type="radio" name="alternativa5" id="pergunta14" value="false">Community
+                    <input type="radio" name="alternativa5" id="pergunta15" value="false">Grey's Anatomy <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card6">
                     <img src="./img/card6.jpg" alt="Imagem de Peaky Blinders"><br>
-                    <input type="radio" name="alternativa" id="pergunta16" value="false">Sherlock
-                    <input type="radio" name="alternativa" id="pergunta17" value="true">Peaky Blinders
-                    <input type="radio" name="alternativa" id="pergunta18" value="false">The Big Bang Theory
+                    <input type="radio" name="alternativa6" id="pergunta16" value="false">Sherlock
+                    <input type="radio" name="alternativa6" id="pergunta17" value="true">Peaky Blinders
+                    <input type="radio" name="alternativa6" id="pergunta18" value="false">The Big Bang Theory <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
             </section>
             <section id="sessao3">
                 <div class="card" id="card7">
                     <img src="./img/card7.jpg" alt="Imagem de Bojack Hoserman"><br>
-                    <input type="radio" name="alternativa" id="pergunta19" value="false">South Park
-                    <input type="radio" name="alternativa" id="pergunta20" value="false">Simpsons
-                    <input type="radio" name="alternativa" id="pergunta21" value="true">Bojack Hoserman
+                    <input type="radio" name="alternativa7" id="pergunta19" value="false">South Park
+                    <input type="radio" name="alternativa7" id="pergunta20" value="false">Simpsons
+                    <input type="radio" name="alternativa7" id="pergunta21" value="true">Bojack Hoserman <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card8">
                     <img src="./img/card8.jpg" alt="Imagem de Rick and Morty"><br>
-                    <input type="radio" name="alternativa" id="pergunta22" value="true">Rick and Morty
-                    <input type="radio" name="alternativa" id="pergunta23" value="false">Midnight Gospel
-                    <input type="radio" name="alternativa" id="pergunta24" value="false">Big Mouth
+                    <input type="radio" name="alternativa8" id="pergunta22" value="true">Rick and Morty
+                    <input type="radio" name="alternativa8" id="pergunta23" value="false">Midnight Gospel
+                    <input type="radio" name="alternativa8" id="pergunta24" value="false">Big Mouth <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card9">
                     <img src="./img/card9.jpg" alt="Imagem de Dark"><br>
-                    <input type="radio" name="alternativa" id="pergunta25" value="false">American Gods
-                    <input type="radio" name="alternativa" id="pergunta26" value="true">Dark
-                    <input type="radio" name="alternativa" id="pergunta27" value="false">Atlanta
+                    <input type="radio" name="alternativa9" id="pergunta25" value="false">American Gods
+                    <input type="radio" name="alternativa9" id="pergunta26" value="true">Dark
+                    <input type="radio" name="alternativa9" id="pergunta27" value="false">Atlanta <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
             </section>
             <section id="sessao4">
                 <div class="card" id="card10">
                     <img src="./img/card10.jpg" alt="Imagem de Midnight Gospel"><br>
-                    <input type="radio" name="alternativa" id="pergunta28" value="true">Midnight Gospel
-                    <input type="radio" name="alternativa" id="pergunta29" value="false">Close Enough
-                    <input type="radio" name="alternativa" id="pergunta30" value="false">Futurama
+                    <input type="radio" name="alternativa10" id="pergunta28" value="true">Midnight Gospel
+                    <input type="radio" name="alternativa10" id="pergunta29" value="false">Close Enough
+                    <input type="radio" name="alternativa10" id="pergunta30" value="false">Futurama <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card11">
                     <img src="./img/card11.jpg" alt="Imagem de Midnight Gospel"><br>
-                    <input type="radio" name="alternativa" id="pergunta31" value="false">Samurai X
-                    <input type="radio" name="alternativa" id="pergunta32" value="false">Avatar: A Lenda de Korra
-                    <input type="radio" name="alternativa" id="pergunta33" value="true">Avatar: A Lenda de Aang
+                    <input type="radio" name="alternativa11" id="pergunta31" value="false">Samurai X
+                    <input type="radio" name="alternativa11" id="pergunta32" value="false">Avatar: A Lenda de Korra
+                    <input type="radio" name="alternativa11" id="pergunta33" value="true">Avatar: A Lenda de Aang <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
                 <div class="card" id="card12">
                     <img src="./img/card12.jpg" alt="Imagem de Midnight Gospel"><br>
-                    <input type="radio" name="alternativa" id="pergunta34" value="true">Hora de Aventura
-                    <input type="radio" name="alternativa" id="pergunta35" value="false">O Incrível Mundo de Gumball
-                    <input type="radio" name="alternativa" id="pergunta36" value="false">Apenas Um Show
+                    <input type="radio" name="alternativa12" id="pergunta34" value="true">Hora de Aventura
+                    <input type="radio" name="alternativa12" id="pergunta35" value="false">O Incrível Mundo de Gumball
+                    <input type="radio" name="alternativa12" id="pergunta36" value="false">Apenas Um Show <br>
+                    <button onclick="EnviarRespostas()">Enviar</button>
                 </div>
             </section>
-            <button onclick="EnviarRespostas()">Enviar</button>
         </div>
         <div id="score">
-            <span>Score: </span>
         </div>
         <div id="ranking">
 

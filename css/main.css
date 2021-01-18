@@ -15,6 +15,9 @@ header {
 h1 {
     padding-top: 0;
     margin-top: 0;
+    font-family: "Zilla Slab", serif;
+    color: darkslateblue;
+    text-shadow: 2px 2px cadetblue;
 }
 
 main {
@@ -29,6 +32,7 @@ section {
     justify-content: space-between;
     font-family: "Inconsolata", serif;
     font-size: 18px;
+    color: whitesmoke;
 }
 
 #deck {
@@ -38,6 +42,7 @@ section {
 div.card {
     margin: 20px;
     width: 80%;
+    height: 30%;
     margin-top: 30px;
     background-color: lightslategray;
     box-shadow: darkslateblue 10px 10px 5px;

@@ -1,4 +1,4 @@
-var pontuacaoAtual = 10
+var pontuacaoAtual = 0
 
 var deck = [
     {
@@ -18,11 +18,13 @@ function EnviarResposta1(){
 
         pontuacaoAtual += 10
 
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span1").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
 }
@@ -34,11 +36,13 @@ function EnviarResposta2(){
         document.getElementById("span2").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span2").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     
@@ -49,13 +53,15 @@ function EnviarResposta3(){
     if (resposta3) 
     {
         document.getElementById("span3").textContent = "Você acertou"
-    
+            
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span3").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     
@@ -68,11 +74,13 @@ function EnviarResposta4(){
         document.getElementById("span4").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span4").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     
@@ -85,11 +93,13 @@ function EnviarResposta5(){
         document.getElementById("span5").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span5").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     
@@ -102,11 +112,13 @@ function EnviarResposta6(){
         document.getElementById("span6").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span6").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
 }
@@ -118,11 +130,13 @@ function EnviarResposta7(){
         document.getElementById("span7").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span7").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     
@@ -135,11 +149,13 @@ function EnviarResposta8(){
         document.getElementById("span8").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span8").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
 }
@@ -151,11 +167,13 @@ function EnviarResposta9(){
         document.getElementById("span9").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span9").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
 }
@@ -167,11 +185,13 @@ function EnviarResposta10(){
         document.getElementById("span10").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span10").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }   
 }
@@ -183,11 +203,13 @@ function EnviarResposta11(){
         document.getElementById("span11").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span11").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }   
 }
@@ -199,11 +221,13 @@ function EnviarResposta12(){
         document.getElementById("span12").textContent = "Você acertou"
     
         pontuacaoAtual += 10
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }
     else
     {
         document.getElementById("span12").textContent = "Você errou"
+        document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
     }   
 }
@@ -215,10 +239,4 @@ function RegistrarNick()
     localStorage.setItem(nick, nick)
     
     console.log(`${nick} foi cadastrado.`)
-}
-
-function EnviarRespostas()
-{
-    let resposta1 = getElementById("pergunta2").checked
-    let resposta2 = getElementById("pergu")
 }

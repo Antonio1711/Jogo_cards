@@ -11,6 +11,7 @@ html, body{
 
 header {
     background-color: lightsteelblue;
+    color: darkslateblue;
 }
 
 h1 {
@@ -29,6 +30,7 @@ section {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    text-align: center;
     font-family: "Inconsolata", serif;
     font-size: 18px;
     color: whitesmoke;
@@ -42,6 +44,7 @@ div.card {
     margin: 20px;
     width: 80%;
     margin-top: 30px;
+    margin-left: 45px;
     background-color: lightslategray;
     box-shadow: darkslateblue 10px 10px 5px;
     border-radius: 5%;
@@ -61,4 +64,9 @@ input {
 button {
     margin-top: 0px;
     padding-top: 0px;
-}}
+}
+
+#score{
+    padding-right: 20px;
+}
+}

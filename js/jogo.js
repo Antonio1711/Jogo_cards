@@ -1,13 +1,18 @@
+function RegistrarNick()
+{
+    var nick = document.getElementById("nickname").value 
+
+    localStorage.setItem("nickname", nick)
+    
+    console.log(`${nick} foi cadastrado.`)
+}
 var pontuacaoAtual = 0
 
-var deck = [
-    {
-        id: 1,
-        imgSrc: "./img/card1.jpg",
-        alternativa1: "Card1 - Alt1",
-        alternativa2: "Card1 - Alt2", 
-    }
-]
+function refresh(){
+
+    window.location.reload();
+    window.scrollTo(0,0)
+}
 
 
 function EnviarResposta1(){
@@ -215,6 +220,16 @@ function EnviarResposta11(){
 }
 
 function EnviarResposta12(){
+    if(localStorage.getItem("recorde") == null){
+        localStorage.setItem("recorde", 0)
+    }
+    
+    let point = parseInt(localStorage.getItem("recorde"))
+    if(point == undefined || point == 0 || point == NaN){
+    
+      localStorage.setItem("recorde", 0)
+    }
+
     let resposta12 = document.getElementById("pergunta34").checked
     if (resposta12) 
     {
@@ -229,14 +244,16 @@ function EnviarResposta12(){
         document.getElementById("span12").textContent = "Você errou"
         document.getElementById("score").textContent = pontuacaoAtual
         console.log(`Pontuação atual ${pontuacaoAtual}`)
-    }   
-}
+    }
 
-function RegistrarNick()
-{
-    let nick = document.getElementById("nickname").value 
-
-    localStorage.setItem(nick, nick)
+    if(pontuacaoAtual > point)
+    {
+        localStorage.setItem("recorde", pontuacaoAtual)
+        document.getElementById("recorde").textContent = `Recorde: ${localStorage.getItem("recorde")} (${localStorage.getItem("nickname")})`
+    }
     
-    console.log(`${nick} foi cadastrado.`)
+    else
+    {
+        document.getElementById("recorde").textContent = `Recorde: ${localStorage.getItem("recorde")} (${localStorage.getItem("nickname")})`
+    }
 }
